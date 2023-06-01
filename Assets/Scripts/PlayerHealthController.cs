@@ -43,7 +43,7 @@ public class PlayerHealthController : MonoBehaviour
             // If the player has no more health make it disappear
             if (currentHealth <= 0) {
                 currentHealth = 0;
-                gameObject.SetActive(false);
+                LevelManager.instance.RespawnPlayer();
             // If the player got hit make it invincible for some time and call the knock back function
             } else {
                 invincibleCounter = invincibleLength;

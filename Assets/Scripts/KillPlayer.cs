@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamagePlayer : MonoBehaviour
+public class KillPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start() {
@@ -15,10 +15,10 @@ public class DamagePlayer : MonoBehaviour
     }
 
     // Function in Unity for triggering an event
-    // Deals damage to the player
-    void OnTriggerEnter2D(Collider2D other) {
+    // If the player falls of the level respawn him
+    private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
-            PlayerHealthController.instance.DealDamage();
+            LevelManager.instance.RespawnPlayer();
         }
     }
 }
