@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour
 
     public float waitToRespawn;
 
+    public int coinsCollected;
+
     // Awake is used to initialize something before the game starts
     private void Awake() {
         instance = this;

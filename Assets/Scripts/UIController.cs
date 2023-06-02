@@ -9,6 +9,8 @@ public class UIController : MonoBehaviour
     public Image heart1, heart2, heart3;
     public Sprite heartFull, heartEmpty, heartHalf;
 
+    public Text coinText;
+
     // Awake is used to initialize something before the game starts
     private void Awake() {
         instance = this;
@@ -16,7 +18,8 @@ public class UIController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        
+        // Setting the coin count at the start of the game to 0
+        UpdateCoinCount();
     }
 
     // Update is called once per frame
@@ -68,5 +71,10 @@ public class UIController : MonoBehaviour
                 heart3.sprite = heartEmpty;
                 break;
         }
+    }
+
+    // Update coin count updates how many coins the player has collected
+    public void UpdateCoinCount() {
+        coinText.text = LevelManager.instance.coinsCollected.ToString();
     }
 }

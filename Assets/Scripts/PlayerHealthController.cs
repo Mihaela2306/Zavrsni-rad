@@ -13,6 +13,8 @@ public class PlayerHealthController : MonoBehaviour
 
     private SpriteRenderer theSR;
 
+    public GameObject deathEffect;
+
     // Awake is used to initialize something before the game starts
     private void Awake() {
         instance = this;
@@ -43,6 +45,7 @@ public class PlayerHealthController : MonoBehaviour
             // If the player has no more health make it disappear
             if (currentHealth <= 0) {
                 currentHealth = 0;
+                Instantiate(deathEffect, transform.position, transform.rotation);
                 LevelManager.instance.RespawnPlayer();
             // If the player got hit make it invincible for some time and call the knock back function
             } else {
@@ -54,5 +57,14 @@ public class PlayerHealthController : MonoBehaviour
 
             UIController.instance.UpdateHealthDisplay();
         }
+    }
+
+    // Heal Player is used for increasing the players health
+    public void HealPlayer() {
+        currentHealth++;
+        if (currentHealth > maxHealth) {
+            currentHealth = maxHealth;
+        }
+        UIController.instance.UpdateHealthDisplay();
     }
 }

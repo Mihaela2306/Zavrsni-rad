@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 815605569
-  m_SortingLayer: 1
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 2044149791, guid: 2f0c308c3d2fcef4597ac1e121118685, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -183,6 +183,7 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 6
   invincibleLength: 1
+  deathEffect: {fileID: 2126258945595256221, guid: 6abdb91c89374c649819671df06ae2c2, type: 3}
 --- !u!1 &9157303129783694794
 GameObject:
   m_ObjectHideFlags: 0
