@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7cd79293e7a6e3140be63d0e5d1fda57
+guid: 93c546dbbb51a644db54a89bf51f0c10
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 21
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dog-hurt-Sheet_0
+      name: spikes-1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00e3784d459543c4997913c832411e7f
-      internalID: 883279002
+      spriteID: e7e55b5cee1977741ad7209e15c36877
+      internalID: -513359772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog-hurt-Sheet_1
+      name: spikes-1_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 16
         y: 0
-        width: 80
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4354eec9fe3e664b9c1085763ce7074
-      internalID: 1099513337
+      spriteID: 0a85c02c23d25214cacab485da1394b4
+      internalID: -1570163421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spikes-1_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3407981c5406f429f3ea63aafe47e8
+      internalID: -1554403160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spikes-1_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffb7bffff3fb8942afe1877a824967f
+      internalID: 1286388795
       vertices: []
       indices: 
       edges: []
@@ -169,8 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dog-hurt-Sheet_0: 883279002
-      dog-hurt-Sheet_1: 1099513337
+      spikes-1_3: 1286388795
+      spikes-1_2: -1554403160
+      spikes-1_0: -513359772
+      spikes-1_1: -1570163421
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

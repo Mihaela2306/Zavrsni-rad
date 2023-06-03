@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public float knockBackLength, knockBackForce;
     private float knockBackCounter;
 
+    public float bounceForce;
+
     // Awake is used to initialize something before the game starts
     private void Awake() {
         instance = this;
@@ -80,5 +82,10 @@ public class PlayerController : MonoBehaviour
         knockBackCounter = knockBackLength;
         theRB.velocity = new Vector2(0f, knockBackForce);
         anim.SetTrigger("hurt");
+    }
+
+    // Bounce function bounces the player after killing an enemy
+    public void Bounce() {
+        theRB.velocity = new Vector2(theRB.velocity.x, bounceForce);
     }
 }

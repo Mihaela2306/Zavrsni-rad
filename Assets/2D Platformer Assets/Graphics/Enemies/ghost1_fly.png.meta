@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7cd79293e7a6e3140be63d0e5d1fda57
+guid: 76bb822d696ab4e45b9a2e7cac6ef0a7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 21
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dog-hurt-Sheet_0
+      name: ghost1_fly_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00e3784d459543c4997913c832411e7f
-      internalID: 883279002
+      spriteID: 772d25d374fcf404a82a212fa1d1f8cb
+      internalID: -362226748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog-hurt-Sheet_1
+      name: ghost1_fly_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 16
         y: 0
-        width: 80
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4354eec9fe3e664b9c1085763ce7074
-      internalID: 1099513337
+      spriteID: b0a224e81194a7e4d92b81605891bb7d
+      internalID: 1978976858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost1_fly_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0901047d0d1706b4294de9c78df69b68
+      internalID: 1716943922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost1_fly_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dde54c92fc51b647a44f080db851e96
+      internalID: 594501858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost1_fly_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedb90e38279df4438942511371a746c
+      internalID: 46755474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ghost1_fly_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a653396fb5f988b46afac7ea4904754f
+      internalID: 1324523507
       vertices: []
       indices: 
       edges: []
@@ -169,8 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dog-hurt-Sheet_0: 883279002
-      dog-hurt-Sheet_1: 1099513337
+      ghost1_fly_1: 1978976858
+      ghost1_fly_0: -362226748
+      ghost1_fly_2: 1716943922
+      ghost1_fly_3: 594501858
+      ghost1_fly_5: 1324523507
+      ghost1_fly_4: 46755474
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

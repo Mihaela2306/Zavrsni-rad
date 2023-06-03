@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 90d706bb938267346a187110e2fded23
+guid: 809010c7798b89c4991490b1248d8509
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 21
+  spritePixelsToUnits: 11
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dog-walk-Sheet_0
+      name: mushroom-walk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6985f439403873c4289db2121cf8a881
-      internalID: 1495414737
+      spriteID: 52ad466cdb707ac41ad692af3e1029a1
+      internalID: -1383430326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog-walk-Sheet_1
+      name: mushroom-walk_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9401ffe2eb5734083c31997266d1fd
+      internalID: 300551562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom-walk_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ce569aacd6521428bf44a366b9f0e9
+      internalID: -1543031431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom-walk_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20787cdeeb617c48b1a1fb545c59dfd
+      internalID: -2025546562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom-walk_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08acf22389a3804b9d01dabed1206be
+      internalID: -2134809467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom-walk_5
       rect:
         serializedVersion: 2
         x: 80
         y: 0
-        width: 80
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50a5d33b0de851f418d041fa60b91498
-      internalID: -560273878
+      spriteID: 0512117ba82d055449f5cdeee20fe8d3
+      internalID: 1873823392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog-walk-Sheet_2
+      name: mushroom-walk_6
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 0
-        width: 80
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 051ce9ca38abc4e4fbac60b1bd36af86
-      internalID: -2138243981
+      spriteID: 9eef16963794a814cb9f924a31c59585
+      internalID: 1698226233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dog-walk-Sheet_3
+      name: mushroom-walk_7
       rect:
         serializedVersion: 2
-        x: 240
+        x: 112
         y: 0
-        width: 80
-        height: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +278,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fcca3ff7da103b4f856f6775ef3bbb0
-      internalID: 694752989
+      spriteID: e52b27748d0434a43a55638cff317060
+      internalID: 10150558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom-walk_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54396dd4e07e02d45bba328bce0ce82b
+      internalID: -1729653614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroom-walk_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0147eae112e46c0449e533587a33123c
+      internalID: -1203544270
       vertices: []
       indices: 
       edges: []
@@ -211,10 +337,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dog-walk-Sheet_3: 694752989
-      dog-walk-Sheet_1: -560273878
-      dog-walk-Sheet_0: 1495414737
-      dog-walk-Sheet_2: -2138243981
+      mushroom-walk_5: 1873823392
+      mushroom-walk_7: 10150558
+      mushroom-walk_6: 1698226233
+      mushroom-walk_2: -1543031431
+      mushroom-walk_9: -1203544270
+      mushroom-walk_8: -1729653614
+      mushroom-walk_0: -1383430326
+      mushroom-walk_1: 300551562
+      mushroom-walk_3: -2025546562
+      mushroom-walk_4: -2134809467
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
