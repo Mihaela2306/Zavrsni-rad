@@ -34,6 +34,7 @@ public class LevelManager : MonoBehaviour
     // And for reseting the position and the amount of health for the player
     private IEnumerator RespawnCo() {
         PlayerController.instance.gameObject.SetActive(false);
+        AudioManager.instance.PlaySFX(8);
         
         yield return new WaitForSeconds(waitToRespawn);
 

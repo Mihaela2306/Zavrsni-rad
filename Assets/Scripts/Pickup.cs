@@ -27,6 +27,7 @@ public class Pickup : MonoBehaviour
             if (isCoin) {
                 LevelManager.instance.coinsCollected++;
                 isCollected = true;
+                AudioManager.instance.PlaySFX(6);
                 Destroy(gameObject);
                 Instantiate(pickupEffect, transform.position, transform.rotation);
                 UIController.instance.UpdateCoinCount();
@@ -37,6 +38,7 @@ public class Pickup : MonoBehaviour
                 if (PlayerHealthController.instance.currentHealth != PlayerHealthController.instance.maxHealth) {
                     PlayerHealthController.instance.HealPlayer();
                     isCollected = true;
+                    AudioManager.instance.PlaySFX(7);
                     Destroy(gameObject);
                     Instantiate(pickupEffect, transform.position, transform.rotation);
                 }

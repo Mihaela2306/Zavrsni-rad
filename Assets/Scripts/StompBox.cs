@@ -30,6 +30,8 @@ public class StompBox : MonoBehaviour
             if (dropSelect <= chanceToDrop) {
                 Instantiate(collectible, other.transform.position, other.transform.rotation);
             }
+
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }
