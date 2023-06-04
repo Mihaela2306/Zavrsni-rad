@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     public float bounceForce;
 
+    public bool stopInput;
+
     // Awake is used to initialize something before the game starts
     private void Awake() {
         instance = this;
@@ -35,7 +37,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update() {
         // If the pause menu is not open do things as the player
-        if (!PauseMenu.instance.isPaused) {
+        if (!PauseMenu.instance.isPaused && !stopInput) {
             // If the player didn't get hit the player can walk and jump
             if (knockBackCounter <= 0) {
                 // Moving the player

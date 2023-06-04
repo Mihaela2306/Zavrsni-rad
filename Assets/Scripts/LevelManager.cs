@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class LevelManager : MonoBehaviour
     public float waitToRespawn;
 
     public int coinsCollected;
+
+    public string levelToLoad;
 
     // Awake is used to initialize something before the game starts
     private void Awake() {
@@ -45,5 +48,25 @@ public class LevelManager : MonoBehaviour
         PlayerController.instance.transform.position = CheckpointController.instance.spawnPoint;
         PlayerHealthController.instance.currentHealth = PlayerHealthController.instance.maxHealth;
         UIController.instance.UpdateHealthDisplay();
+    }
+
+    // Function for starting the co routine for ending a level
+    public void EndLevel() {
+        StartCoroutine(EndLevelCo());
+    }
+
+    // Co routine for ending a level
+    private IEnumerator EndLevelCo() {
+        PlayerController.instance.stopInput = true;
+        CameraController.instance.stopFollow = true;
+        UIController.instance.levelCompleteText.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
+
+        UIController.instance.FadeToBlack();
+
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .25f);
+
+        SceneManager.LoadScene(levelToLoad);
     }
 }

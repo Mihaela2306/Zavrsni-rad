@@ -15,6 +15,8 @@ public class UIController : MonoBehaviour
     public float fadeSpeed;
     private bool shouldFadeToBlack, shouldFadeFromBlack;
 
+    public GameObject levelCompleteText;
+
     // Awake is used to initialize something before the game starts
     private void Awake() {
         instance = this;
