@@ -34,42 +34,45 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        // If the player didn't get hit the player can walk and jump
-        if (knockBackCounter <= 0) {
-            // Moving the player
-            theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
+        // If the pause menu is not open do things as the player
+        if (!PauseMenu.instance.isPaused) {
+            // If the player didn't get hit the player can walk and jump
+            if (knockBackCounter <= 0) {
+                // Moving the player
+                theRB.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.velocity.y);
 
-            // Checking if the player is touching the ground to know if the player can jump
-            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
-            if (isGrounded) {
-                canDoubleJump = true;
-            }
-
-            // Player jumping
-            if (Input.GetButtonDown("Jump")) {
+                // Checking if the player is touching the ground to know if the player can jump
+                isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
                 if (isGrounded) {
-                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-                    AudioManager.instance.PlaySFX(10);
-                } else if (canDoubleJump) {
-                    theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
-                    canDoubleJump = false;
-                    AudioManager.instance.PlaySFX(10);
+                    canDoubleJump = true;
                 }
-            }
 
-            // Controlling which way the player is turned
-            if (theRB.velocity.x < 0) {
-                theSR.flipX = true;
-            } else if (theRB.velocity.x > 0) {
-                theSR.flipX = false;
-            }
-        // If the player got hit than decrease the knockBackCounter and move him away from the danger
-        } else {
-            knockBackCounter -= Time.deltaTime;
-            if (!theSR.flipX) {
-                theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
+                // Player jumping
+                if (Input.GetButtonDown("Jump")) {
+                    if (isGrounded) {
+                        theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                        AudioManager.instance.PlaySFX(10);
+                    } else if (canDoubleJump) {
+                        theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+                        canDoubleJump = false;
+                        AudioManager.instance.PlaySFX(10);
+                    }
+                }
+
+                // Controlling which way the player is turned
+                if (theRB.velocity.x < 0) {
+                    theSR.flipX = true;
+                } else if (theRB.velocity.x > 0) {
+                    theSR.flipX = false;
+                }
+            // If the player got hit than decrease the knockBackCounter and move him away from the danger
             } else {
-                theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
+                knockBackCounter -= Time.deltaTime;
+                if (!theSR.flipX) {
+                    theRB.velocity = new Vector2(-knockBackForce, theRB.velocity.y);
+                } else {
+                    theRB.velocity = new Vector2(knockBackForce, theRB.velocity.y);
+                }
             }
         }
 

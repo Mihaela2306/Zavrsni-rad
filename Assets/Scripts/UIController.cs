@@ -11,6 +11,10 @@ public class UIController : MonoBehaviour
 
     public Text coinText;
 
+    public Image fadeScreen;
+    public float fadeSpeed;
+    private bool shouldFadeToBlack, shouldFadeFromBlack;
+
     // Awake is used to initialize something before the game starts
     private void Awake() {
         instance = this;
@@ -20,11 +24,28 @@ public class UIController : MonoBehaviour
     void Start() {
         // Setting the coin count at the start of the game to 0
         UpdateCoinCount();
+        FadeFromBlack();
     }
 
     // Update is called once per frame
     void Update() {
+        // Logic for fading the screen to black
+        if (shouldFadeToBlack) {
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, 
+                Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            if (fadeScreen.color.a == 1f) {
+                shouldFadeToBlack = false;
+            }
+        }
         
+        // Logic for fading the screen from black
+        if (shouldFadeFromBlack) {
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, 
+                Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+            if (fadeScreen.color.a == 0f) {
+                shouldFadeFromBlack = false;
+            }
+        }
     }
 
     // Update Health Display updates how many hearts are displayed on the UI
@@ -76,5 +97,17 @@ public class UIController : MonoBehaviour
     // Update coin count updates how many coins the player has collected
     public void UpdateCoinCount() {
         coinText.text = LevelManager.instance.coinsCollected.ToString();
+    }
+
+    // Setting the bool values for fading to black
+    public void FadeToBlack() {
+        shouldFadeToBlack = true;
+        shouldFadeFromBlack = false;
+    }
+
+    // Setting the bool values for fading from black
+    public void FadeFromBlack() {
+        shouldFadeFromBlack = true;
+        shouldFadeToBlack = false;
     }
 }
