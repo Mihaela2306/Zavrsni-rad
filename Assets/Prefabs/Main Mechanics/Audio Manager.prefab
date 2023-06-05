@@ -904,7 +904,7 @@ MonoBehaviour:
   - {fileID: 7730362303696572782}
   - {fileID: 7730362302468101282}
   backgroundMusic: {fileID: 7730362302949203099}
-  levelEndMusic: {fileID: 0}
+  levelEndMusic: {fileID: 7730362303973300353}
 --- !u!1 &7730362303542967934
 GameObject:
   m_ObjectHideFlags: 0

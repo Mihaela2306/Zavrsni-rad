@@ -32,4 +32,10 @@ public class AudioManager : MonoBehaviour
 
         soundEffects[soundToPlay].Play();
     }
+
+    // Function for playing level victory
+    public void PlayLevelVictory() {
+        backgroundMusic.Stop();
+        levelEndMusic.Play();
+    }
 }

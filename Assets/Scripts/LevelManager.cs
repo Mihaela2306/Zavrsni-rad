@@ -57,6 +57,8 @@ public class LevelManager : MonoBehaviour
 
     // Co routine for ending a level
     private IEnumerator EndLevelCo() {
+        AudioManager.instance.PlayLevelVictory();
+
         PlayerController.instance.stopInput = true;
         CameraController.instance.stopFollow = true;
         UIController.instance.levelCompleteText.SetActive(true);
@@ -65,7 +67,7 @@ public class LevelManager : MonoBehaviour
 
         UIController.instance.FadeToBlack();
 
-        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .25f);
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + 3f);
 
         SceneManager.LoadScene(levelToLoad);
     }

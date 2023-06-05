@@ -145,9 +145,11 @@ MonoBehaviour:
   groundCheckPoint: {fileID: 9157303129783694795}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   knockBackLength: 0.25
   knockBackForce: 10
+  bounceForce: 0
+  stopInput: 0
 --- !u!95 &9157303129669417622
 Animator:
   serializedVersion: 4
@@ -208,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9157303129783694794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.96, z: 0}
+  m_LocalPosition: {x: 0, y: -1.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

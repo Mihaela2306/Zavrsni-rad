@@ -79,8 +79,8 @@ public class PlayerController : MonoBehaviour
         }
 
         // Controlling the animations on the player
-            anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
-            anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("moveSpeed", Mathf.Abs(theRB.velocity.x));
+        anim.SetBool("isGrounded", isGrounded);
     }
 
     // KnockBack function initializes the counter for the knock back and stops the player from moving
@@ -95,5 +95,19 @@ public class PlayerController : MonoBehaviour
     public void Bounce() {
         theRB.velocity = new Vector2(theRB.velocity.x, bounceForce);
         AudioManager.instance.PlaySFX(10);
+    }
+
+    // Function in Unity for triggering an event on collision with another object
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.CompareTag("Platform")) {
+            transform.parent = other.transform;
+        }
+    }
+
+    // Function in Unity for triggering an event on exiting collision with another object
+    private void OnCollisionExit2D(Collision2D other) {
+        if (other.gameObject.CompareTag("Platform")) {
+            transform.parent = null;
+        }
     }
 }
