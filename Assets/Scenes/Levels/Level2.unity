@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 38.75
       objectReference: {fileID: 0}
+    - target: {fileID: 5230352846000007842, guid: 182a3df3791b60c4193ca3c30878eb01, type: 3}
+      propertyPath: levelToLoad
+      value: Level3
+      objectReference: {fileID: 0}
     - target: {fileID: 5230352846747298481, guid: 182a3df3791b60c4193ca3c30878eb01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 114.55
@@ -13315,7 +13319,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 12
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -18448,10 +18452,10 @@ Tilemap:
     m_Data: {fileID: 1330357396, guid: a827a1563b0548b4299366e114b0057b, type: 3}
   - m_RefCount: 28
     m_Data: {fileID: 2127735520, guid: a827a1563b0548b4299366e114b0057b, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 376326198, guid: a827a1563b0548b4299366e114b0057b, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 376326198, guid: a827a1563b0548b4299366e114b0057b, type: 3}
   - m_RefCount: 228
     m_Data: {fileID: -156992112, guid: a827a1563b0548b4299366e114b0057b, type: 3}
   m_TileMatrixArray:
