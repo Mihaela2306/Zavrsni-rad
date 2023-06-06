@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public AudioSource[] soundEffects;
-    public AudioSource backgroundMusic, levelEndMusic;
+    public AudioSource backgroundMusic, levelEndMusic, bossMusic;
 
     // Awake is used to initialize something before the game starts
     private void Awake() {
@@ -37,5 +37,17 @@ public class AudioManager : MonoBehaviour
     public void PlayLevelVictory() {
         backgroundMusic.Stop();
         levelEndMusic.Play();
+    }
+
+    // Function for playing boss music
+    public void PlayBossMusic() {
+        backgroundMusic.Stop();
+        bossMusic.Play();
+    }
+
+    // Function for stoping boss music
+    public void StopBossMusic() {
+        bossMusic.Stop();
+        backgroundMusic.Play();
     }
 }

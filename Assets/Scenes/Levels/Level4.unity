@@ -1287,6 +1287,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -3.85
       objectReference: {fileID: 0}
+    - target: {fileID: 5230352846000007842, guid: 182a3df3791b60c4193ca3c30878eb01, type: 3}
+      propertyPath: levelToLoad
+      value: Level5
+      objectReference: {fileID: 0}
     - target: {fileID: 5230352846747298481, guid: 182a3df3791b60c4193ca3c30878eb01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 113.63
@@ -1342,6 +1346,10 @@ PrefabInstance:
     - target: {fileID: 6812038101442897625, guid: 182a3df3791b60c4193ca3c30878eb01, type: 3}
       propertyPath: m_Name
       value: Level Pack
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424170595952083189, guid: 182a3df3791b60c4193ca3c30878eb01, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182a3df3791b60c4193ca3c30878eb01, type: 3}
